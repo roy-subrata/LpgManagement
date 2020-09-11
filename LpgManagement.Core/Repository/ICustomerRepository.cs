@@ -1,6 +1,13 @@
-﻿using System;
+﻿using LpgManagement.Data.Entity;
+using System;
+using System.Collections.Generic;
+using System.Text;
 
-public interface ICustomerRepository
+namespace LpgManagement.Core.Repository
 {
-	
+   public interface ICustomerRepository
+   {
+
+   }
 }
+

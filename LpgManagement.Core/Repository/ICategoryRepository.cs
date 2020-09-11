@@ -6,7 +6,7 @@ using System.Text;
 namespace LpgManagement.Core.Repository
 {
    public interface ICategoryRepository
-    {
+   {
 
-    }
+   }
 }
