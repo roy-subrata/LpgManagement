@@ -15,6 +15,7 @@ namespace LgpManagement.Infrastructure.Repository
         public void Add(TEntity entity)
         {
             Context.Set<TEntity>().Add(entity);
+           
         }
 
         public void Add(IEnumerable<TEntity> entity)
@@ -37,7 +38,7 @@ namespace LgpManagement.Infrastructure.Repository
             Context.Set<TEntity>().Remove(entity);
         }
 
-        public void RemoveRange(IEnumerable<TEntity> entity)
+        public void Remove(IEnumerable<TEntity> entity)
         {
             Context.Set<TEntity>().RemoveRange(entity);
         }

@@ -14,7 +14,7 @@ namespace LpgManagement.Core.Repository
         void Add(IEnumerable<TEntity> entity);
         //remove
         void Remove(TEntity entity);
-        void RemoveRange(IEnumerable<TEntity> entity);
+        void Remove(IEnumerable<TEntity> entity);
       
     }
 }
