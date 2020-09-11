@@ -10,5 +10,6 @@ namespace LpgManagement.Data.Entity
         public DateTime ModifyEntity { get; set; }
         public string Name { get; set; }
         public string Desc { get; set; }
+        
     }
 }

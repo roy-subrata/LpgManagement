@@ -7,39 +7,40 @@ namespace LgpManagement.Infrastructure.Repository
 {
     public class Repository<TEntity> : IRepository<TEntity> where TEntity : class
     {
-        protected  readonly DbContext _context;
+        protected  readonly DbContext Context;
         public Repository(DbContext context)
         {
-            _context = context;
+            Context = context;
         }
         public void Add(TEntity entity)
         {
-            _context.Set<TEntity>().Add(entity);
+            Context.Set<TEntity>().Add(entity);
+           
         }
 
         public void Add(IEnumerable<TEntity> entity)
         {
-            _context.Set<TEntity>().AddRange(entity);
+            Context.Set<TEntity>().AddRange(entity);
         }
 
         public IEnumerable<TEntity> Get()
         {
-           return _context.Set<TEntity>().ToList();
+           return Context.Set<TEntity>().ToList();
         }
 
         public TEntity GetById(int id)
         {
-            return _context.Set<TEntity>().Find(id);
+            return Context.Set<TEntity>().Find(id);
         }
 
         public void Remove(TEntity entity)
         {
-            _context.Set<TEntity>().Remove(entity);
+            Context.Set<TEntity>().Remove(entity);
         }
 
-        public void RemoveRange(IEnumerable<TEntity> entity)
+        public void Remove(IEnumerable<TEntity> entity)
         {
-            _context.Set<TEntity>().RemoveRange(entity);
+            Context.Set<TEntity>().RemoveRange(entity);
         }
     }
 }

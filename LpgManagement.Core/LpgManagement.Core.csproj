@@ -8,4 +8,8 @@
     <Folder Include="Domain\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\LpgManagement.Data\LpgManagement.Data.csproj" />
+  </ItemGroup>
+
 </Project>
